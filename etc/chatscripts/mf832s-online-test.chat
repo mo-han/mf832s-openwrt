@@ -1,0 +1,24 @@
+ABORT   BUSY
+ABORT   "NO CARRIER"
+ABORT   "ERROR\r"
+TIMEOUT 1
+''                      "AT"
+OK                      "AT+CFUN?"
+"+CFUN: 1"              ''
+OK                      "AT+CGDCONT?"
+'+CGDCONT: 1,"IPV4V6",' ''
+OK                      "AT+CGATT?"
+"+CGATT: 1"             ''
+OK                      "AT+CGACT?"
+"+CGACT: 1,1"           ''
+OK                      "AT+ZGACT?"
+"+ZGACT: 1,1"           ''
+OK                      "AT+CREG?"
+"+CREG: 1,1"            ''
+OK                      "AT+CGREG?"
+"+CGREG: 1,"            ''
+OK                      "AT+CEREG?"
+"+CEREG: 1,"            ''
+OK                      "AT+CGPADDR=1"
+'+CGPADDR: 1,"'         ''
+OK                      ''
