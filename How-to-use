@@ -1,0 +1,27 @@
+1.添加一个名字叫"mf832s"的interface.
+  Add a interface call "mf832s".
+2.在通用设置页面设置协议为"未设置"
+  Set the protocol to "unmanaged" at General Setup page.
+3.在高级设置中将自动启动与强制连接勾选.
+  Click "bring up on boot" and "force link" at Advanced Settings page.
+4.在物理设置页面将端口选为eth1
+  Select interface "eth1" at Physical Settings page.
+5.在防火墙页面选择"wan"区域
+  Select "WAN Zone" at Firewall Settings page.
+6.使用SSH登陆到openwrt路由器.输入命令 "udhcpc -i eth1" 回车.
+  Login to openwrt router by SSH clent.Input and run command "udhcpc -i eth1" .
+7.当你看到如下内容即为4G上网成功.
+  When you saw screen output line like this,you are already on 4G network.
+
+范例  
+SCREEN SAMPLE
+
+root@OpenWrt:/etc# udhcpc -i eth1
+udhcpc: started, v1.28.4
+udhcpc: sending discover
+udhcpc: sending select for 10.40.162.36
+udhcpc: lease of 10.40.162.36 obtained, lease time 7200
+udhcpc: ifconfig eth1 10.40.162.36 netmask 255.0.0.0 broadcast +
+udhcpc: setting default routers: 10.40.162.37
+
+  
