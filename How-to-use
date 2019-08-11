@@ -1,3 +1,29 @@
+环境要求 openwrt 18.06.4   //其他版本有些软件名字不一致,需要手工修改,但仍可使用.
+Requirement system version openwrt 18.06.4   //other version have some package name or grammar issues,but still work if you can fix it by yourself.
+
+系统软件包要求
+Package Requirement
+----------------------------
+comgt-ncm 
+kmod-usb-net-huawei-cdc-ncm 
+usb-modeswitch 
+kmod-usb-serial 
+kmod-usb-serial-option 
+kmod-usb-serial-wwan 
+kmod-usb-net 
+kmod-usb-net-rndis 
+usbutils 
+luci-proto-ppp 
+luci-proto-ncm 
+luci-proto-qmi
+
+//所有包都需安装到位,看了很多论坛帖子和官网介绍总结的.虽然有些包名字看起来不需要,但是主要是安装这个包的时候系统会安装许多他的前置包,可能和那个前置包有关.
+//Install all packages and don't missing anything.
+
+
+
+
+
 1.添加一个名字叫"mf832s"的interface.
   Add a interface call "mf832s".
 2.在通用设置页面设置协议为"未设置"
