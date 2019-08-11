@@ -29,3 +29,6 @@ NETIF=network.interface.mf832s
         ubus call $NETIF up ; } ||\
         logger -t hotplug "MF832S: $MODEM chat fail" ||\
     exit ; }
+ifconfig eth1 up
+sleep 20s
+udhcpc -i eth1
